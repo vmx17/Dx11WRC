@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SpinningCubeTest (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SpinningCubeTest (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

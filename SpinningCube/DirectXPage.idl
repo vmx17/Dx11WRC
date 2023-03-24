@@ -1,0 +1,8 @@
+namespace SpinningCube
+{
+    [default_interface]
+    runtimeclass DirectXPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        DirectXPage();
+    }
+}

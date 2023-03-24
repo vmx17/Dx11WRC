@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SpinningCubeComponent</id>
+    <version>0.1.0-prerelease</version>
+    <authors>vmax (mod. only)</authors>
+    <description>A spinning component</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows10.0.22621.0" />
+      <group targetFramework=".NETCoreApp3.0" />
+      <group targetFramework="UAP10.0" />
+      <group targetFramework=".NETFramework4.8" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!--Support .NET 6, .NET Core 3, UAP, .NET Framework 4.6, C++ -->
+    <!--Architecture-netural assemblies-->
+    <file src="..\..\_build\AnyCPU\Release\SpinningCubeProjection\bin\SpinningCubeProjection.dll" target="lib\net6.0-windows10.0.22621.0\SpinningCubeProjection.dll" />
+    <file src="..\..\_build\x64\Release\SpinningCube\bin\SpinningCube.winmd" target="lib\netcoreapp3.0\SpinningCubeComponent.winmd" />
+    <file src="..\..\_build\x64\Release\SpinningCube\bin\SpinningCube.winmd" target="lib\uap10.0\SpinningCubeComponent.winmd" />
+    <file src="..\..\_build\x64\Release\SpinningCube\bin\SpinningCube.winmd" target="lib\net48\SpinningCubeComponent.winmd" />
+    <!--Architecture-specific implementation DLLs should be copied into RID-relative folders-->
+    <file src="..\..\_build\x64\Release\SpinningCube\bin\SpinningCube.exe" target="runtimes\win10-x64\native\SpinningCubeComponent.dll" />
+    <!--To support x86 and Arm64, build SpinningCube for those other architectures and uncomment the entries below.-->
+    <!--<file src="..\..\_build\Win32\Release\SpinningCube\bin\SpinningCube.dll" target="runtimes\win10-x86\native\SpinningCubeComponent.dll" />-->
+    <!--<file src="..\..\_build\arm64\Release\SpinningCube\bin\SpinningCube.dll" target="runtimes\win10-arm64\native\SpinningCubeComponent.dll" />-->
+  </files>
+</package>
